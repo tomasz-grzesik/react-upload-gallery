@@ -4,7 +4,7 @@ import { SortableContainer, SortableElement } from "react-sortable-hoc";
 import Context from "./Context";
 import { arrayMove } from "./Utils";
 
-const DragItem = SortableElement(({ children }) => <div>{children}</div>);
+const DragItem = SortableElement(({ children }) => <div style={{color: 'red', background: '#555'}}{>{children}</div>);
 const SortableList = SortableContainer(({ children }) => children);
 
 const DragArea = (props) => {
