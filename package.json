@@ -3,7 +3,6 @@
   "version": "0.4.1",
   "license": "MIT",
   "author": "Muhammet INAN",
-  "prepare": "npm run build",
   "repository": {
     "type": "git",
     "url": "https://github.com/m-inan/react-upload-gallery.git"
@@ -24,7 +23,8 @@
   "scripts": {
     "start": "webpack --watch",
     "build": "rm -rf dist && babel src -d dist --copy-files && node-sass src/style.scss -o dist",
-    "prettier": "onchange 'src/**/*.js' -- prettier --write {{changed}}"
+    "prettier": "onchange 'src/**/*.js' -- prettier --write {{changed}}",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
