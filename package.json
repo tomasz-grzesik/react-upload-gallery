@@ -3,6 +3,7 @@
   "version": "0.4.1",
   "license": "MIT",
   "author": "Muhammet INAN",
+  "prepare": "npm run build",
   "repository": {
     "type": "git",
     "url": "https://github.com/m-inan/react-upload-gallery.git"
